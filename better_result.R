@@ -28,6 +28,7 @@ gene_mut_count$Total <- rowSums(gene_mut_count[, 3:13])
 
 gene_demo <- merge(gene_mut_count, demogr, by = "sample_id", all = TRUE)
 
+write.csv(gene_demo, file = "gene_mutations.csv")
 
 
 
